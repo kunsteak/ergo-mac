@@ -1,0 +1,1008 @@
+{
+    "title": "Custom",
+    "rules": [
+        {
+            "description": "Complex Modifications Main",
+            "manipulators": [
+                {
+                    "description": "MEH-key on hold 'I'",
+                    "type": "basic",
+                    "from": {
+                        "key_code": "i"
+                    },
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 200,
+                        "basic.to_if_held_down_threshold_milliseconds": 200
+                    },
+                    "to_after_key_up": [
+                        {
+                            "key_code": "i"
+                        }
+                    ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "left_shift",
+                            "modifiers": [
+                                "left_control",
+                                "left_option"
+                            ],
+                            "halt": true
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_shift",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_shift",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_command",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_command",
+                        "modifiers": {
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_command",
+                            "lazy": true
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "delete_or_backspace"
+                        }
+                    ]
+                },
+                {
+                    "description": "--- RIGHT_CONTROL stuff START ---"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'P' = DELETE",
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'G' = DELETE",
+                    "from": {
+                        "key_code": "g",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'A' = FORWARD_DELETE",
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'S' = FORWARD_DELETE",
+                    "from": {
+                        "key_code": "s",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'N' = RETURN",
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'T' = RETURN",
+                    "from": {
+                        "key_code": "t",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + ';' = ESCAPE",
+                    "from": {
+                        "key_code": "semicolon",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'W' = ESCAPE",
+                    "from": {
+                        "key_code": "w",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'E' = TAB",
+                    "from": {
+                        "key_code": "e",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'R' = TAB",
+                    "from": {
+                        "key_code": "r",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + '.' = SPACE",
+                    "from": {
+                        "key_code": "period",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "RIGHT_CONTROL + 'V' = SPACE",
+                    "from": {
+                        "key_code": "v",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_control"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "--- RIGHT_CONTROL stuff END ---"
+                },
+                {
+                    "description": "--- NAVIGATION stuff START ---"
+                },
+                {
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_command"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_command"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "down_arrow"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "e",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_command"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "up_arrow"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_command"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "period",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_command"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "end"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "from": {
+                        "key_code": "semicolon",
+                        "modifiers": {
+                            "mandatory": [
+                                "right_command"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "home"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "--- NAVIGATION stuff END ---"
+                },
+                {
+                    "description": "--- Middle/Numpad stuff START ---"
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_4"
+                    },
+                    "to_after_key_up": [
+                        {
+                            "key_code": "9",
+                            "modifiers": [
+                                "left_shift"
+                            ]
+                        }
+                    ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "1",
+                            "modifiers": [
+                                "left_shift"
+                            ],
+                            "halt": true
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_9"
+                    },
+                    "to_after_key_up": [
+                        {
+                            "key_code": "0",
+                            "modifiers": [
+                                "left_shift"
+                            ]
+                        }
+                    ],
+                    "to_if_held_down": [
+                        {
+                            "key_code": "2",
+                            "modifiers": [
+                                "left_shift"
+                            ],
+                            "halt": true
+                        }
+                    ]
+                },
+                {
+                    "description": "--- Middle/Numpad Stuff END ---"
+                },
+                {
+                    "description": "--- Right hand Numbers stuff START ---"
+                },
+                {
+                    "description": "Holding down MEH and D allows to access right hand numbers",
+                    "type": "basic",
+                    "from": {
+                        "key_code": "d",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "any"
+                            ]
+                        }
+                    },
+                    "parameters": {
+                        "basic.to_if_alone_timeout_milliseconds": 200,
+                        "basic.to_if_held_down_threshold_milliseconds": 200
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "d_pressed",
+                                "value": true
+                            }
+                        }
+                    ],
+                    "to_after_key_up": [
+                        {
+                            "set_variable": {
+                                "name": "d_pressed",
+                                "value": false
+                            }
+                        }
+                    ],
+                    "to_if_alone": [
+                        {
+                            "key_code": "d",
+                            "modifiers": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "description": "MEH + 'D' -> 'H' = '1'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "h",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "1"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> ';' = '2'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "semicolon",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "2"
+                        }
+                    ],
+                    "type": "basic"
+                }, 
+                {
+                    "description": "MEH + 'D' -> '.' = '3'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "period",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "3"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'N' = '4'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "n",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "4"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'E' = '5'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "e",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "5"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'A' = '6'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "a",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "6"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'F' = '7'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "f",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "7"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'U' = '8'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "u",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "8"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> ',' = '9'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "comma",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "9"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'O' = '0'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "o",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "0"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'Z' = '.'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "z",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "period"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> ' = ','",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "quote",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "comma"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'P' = '+'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "p",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_plus"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'B' = '-'",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "b",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_hyphen"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "MEH + 'D' -> 'X' = '='",
+                    "conditions": [
+                        {
+                            "name": "d_pressed",
+                            "type": "variable_if",
+                            "value": true
+                        }
+                    ],
+                    "from": {
+                        "key_code": "x",
+                        "modifiers": {
+                            "mandatory": [
+                                "left_shift",
+                                "left_control",
+                                "left_option"
+                            ],
+                            "optional": [
+                                "left_shift"
+                            ]
+                        }
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_equal_sign"
+                        }
+                    ],
+                    "type": "basic"
+                },
+                {
+                    "description": "--- Right hand Numbers stuff  ---"
+                }
+            ]
+        }
+    ]
+}

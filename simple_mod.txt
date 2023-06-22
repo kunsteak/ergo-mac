@@ -1,0 +1,522 @@
+"simple_modifications": [
+    {
+        "from": {
+            "key_code": "0"
+        },
+        "to": [
+            {
+                "key_code": "u"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "1"
+        },
+        "to": [
+            {
+                "key_code": "right_control"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "2"
+        },
+        "to": [
+            {
+                "key_code": "c"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "3"
+        },
+        "to": [
+            {
+                "key_code": "l"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "4"
+        },
+        "to": [
+            {
+                "key_code": "keypad_4"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "5"
+        },
+        "to": [
+            {
+                "key_code": "7"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "6"
+        },
+        "to": [
+            {
+                "key_code": "8"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "7"
+        },
+        "to": [
+            {
+                "key_code": "9"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "8"
+        },
+        "to": [
+            {
+                "key_code": "slash"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "9"
+        },
+        "to": [
+            {
+                "key_code": "keypad_9"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "a"
+        },
+        "to": [
+            {
+                "key_code": "v"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "b"
+        },
+        "to": [
+            {
+                "key_code": "0"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "backslash"
+        },
+        "to": [
+            {
+                "key_code": "o"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "c"
+        },
+        "to": [
+            {
+                "key_code": "j"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "caps_lock"
+        },
+        "to": [
+            {
+                "key_code": "i"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "close_bracket"
+        },
+        "to": [
+            {
+                "key_code": "quote"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "comma"
+        },
+        "to": [
+            {
+                "key_code": "b"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "d"
+        },
+        "to": [
+            {
+                "key_code": "t"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "delete_or_backspace"
+        },
+        "to": [
+            {
+                "key_code": "close_bracket"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "e"
+        },
+        "to": [
+            {
+                "key_code": "m"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "equal_sign"
+        },
+        "to": [
+            {
+                "key_code": "right_control"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "f"
+        },
+        "to": [
+            {
+                "key_code": "g"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "g"
+        },
+        "to": [
+            {
+                "key_code": "1"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "h"
+        },
+        "to": [
+            {
+                "key_code": "2"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "hyphen"
+        },
+        "to": [
+            {
+                "key_code": "comma"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "i"
+        },
+        "to": [
+            {
+                "key_code": "z"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "j"
+        },
+        "to": [
+            {
+                "key_code": "3"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "k"
+        },
+        "to": [
+            {
+                "key_code": "p"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "l"
+        },
+        "to": [
+            {
+                "key_code": "n"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "left_shift"
+        },
+        "to": [
+            {
+                "key_code": "q"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "m"
+        },
+        "to": [
+            {
+                "key_code": "keypad_equal_sign"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "n"
+        },
+        "to": [
+            {
+                "key_code": "keypad_plus"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "non_us_backslash"
+        },
+        "to": [
+            {
+                "key_code": "open_bracket"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "o"
+        },
+        "to": [
+            {
+                "key_code": "f"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "open_bracket"
+        },
+        "to": [
+            {
+                "key_code": "a"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "p"
+        },
+        "to": [
+            {
+                "key_code": "e"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "period"
+        },
+        "to": [
+            {
+                "key_code": "h"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "q"
+        },
+        "to": [
+            {
+                "key_code": "s"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "quote"
+        },
+        "to": [
+            {
+                "key_code": "period"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "r"
+        },
+        "to": [
+            {
+                "key_code": "k"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "return_or_enter"
+        },
+        "to": [
+            {
+                "key_code": "hyphen"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "right_shift"
+        },
+        "to": [
+            {
+                "key_code": "x"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "s"
+        },
+        "to": [
+            {
+                "key_code": "w"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "spacebar"
+        },
+        "to": [
+            {
+                "key_code": "left_shift"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "t"
+        },
+        "to": [
+            {
+                "key_code": "4"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "tab"
+        },
+        "to": [
+            {
+                "key_code": "y"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "u"
+        },
+        "to": [
+            {
+                "key_code": "6"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "v"
+        },
+        "to": [
+            {
+                "key_code": "keypad_hyphen"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "w"
+        },
+        "to": [
+            {
+                "key_code": "r"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "x"
+        },
+        "to": [
+            {
+                "key_code": "d"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "y"
+        },
+        "to": [
+            {
+                "key_code": "5"
+            }
+        ]
+    },
+    {
+        "from": {
+            "key_code": "z"
+        },
+        "to": [
+            {
+                "key_code": "backslash"
+            }
+        ]
+    }
+],
